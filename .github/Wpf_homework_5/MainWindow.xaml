@@ -1,0 +1,33 @@
+﻿<Window x:Class="Wpf_homework_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_homework_5"
+        mc:Ignorable="d"
+        Title="Домашняя работа №5. Рожкова Юлия, УТС-22." Height="450" Width="800">
+    <Grid Background="#FFF5FAD7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="138*"/>
+            <ColumnDefinition Width="480*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="44" Margin="19,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Grid.ColumnSpan="2"/>
+        <Button x:Name="Btn_inf" Content="Сведения о хранении" HorizontalAlignment="Left" Margin="334.4,254,0,0" VerticalAlignment="Top" Width="136" Click="Btn_inf_Click" Height="63" Grid.Column="3" FontStyle="Italic" Background="#FFC6C6C8"/>
+        <ListBox x:Name="lb" Height="240" Margin="10,170,150.6,0" VerticalAlignment="Top" Grid.ColumnSpan="4"/>
+        <Button x:Name="Btn_add" Content="Добавить товар" Grid.Column="3" HorizontalAlignment="Left" Margin="264.4,38,0,0" VerticalAlignment="Top" Width="166" Click="Btn_add_Click" Height="51" FontWeight="Bold" Foreground="White" Background="#FF697FD9"/>
+        <TextBox x:Name="tb_price" Grid.Column="3" HorizontalAlignment="Left" Height="40" Margin="42.4,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_article" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="24.8,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="tb_date" HorizontalAlignment="Left" Height="36" Margin="19,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="tb_storage" Grid.Column="2" HorizontalAlignment="Left" Height="36" Margin="24.8,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label Content="Введите наименование:" HorizontalAlignment="Left" Margin="19,18,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Введите артикул:" Grid.Column="2" HorizontalAlignment="Left" Margin="24.8,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите стоимость:" Grid.Column="3" HorizontalAlignment="Left" Margin="42.4,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите дату выпуска:" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Введите срок хранения:" Grid.Column="2" HorizontalAlignment="Left" Margin="24.8,98,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="месяцев" Grid.Column="3" HorizontalAlignment="Left" Margin="6.4,138,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Btn_delete" Content="Удалить товар из списка" Grid.Column="3" HorizontalAlignment="Left" Margin="264.4,103,0,0" VerticalAlignment="Top" Width="166" Height="53" Click="Btn_delete_Click" Foreground="Black" BorderBrush="#FFFF6E6E" Background="#FFFF0D0D" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
